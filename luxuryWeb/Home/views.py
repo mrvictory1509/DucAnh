@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect
-
 from django.contrib.auth import authenticate
 from django.db import connection
 from django.contrib.auth import login
@@ -20,3 +19,7 @@ from django.http import HttpResponse
 
 def index(request):
     return render(request, 'index.html')
+def sign_in(request):
+    return render(request, 'sign_in.html')
+def sign_up(request):
+    return render(request, 'sign_up.html')
